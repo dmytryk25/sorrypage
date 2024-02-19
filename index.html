@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="checkbox" name="trigger" hidden id="trigger">
+    <label for="trigger" class="container">
+        <div class="valentines">
+            <div class="envelope"></div>
+            <div class="front"></div>
+            <div class="card">
+                <div class="text">Сонечко</br> вибач мене</br> ти найкраща</div>
+                <div class="heart"></div>
+                <div class="hearts">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                    <div class="four"></div>
+                    <div class="five"></div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </label>
+
+    <!-- Додано аудіо -->
+    <audio id="audio" autoplay style="display:none;">
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        // Відтворення аудіо при кліку на документі
+        document.addEventListener("click", function() {
+            const audio = document.getElementById('audio');
+            audio.play();
+        });
+    </script>
+</body>
+
+</html>
